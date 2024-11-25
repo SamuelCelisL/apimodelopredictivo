@@ -8,5 +8,5 @@ import com.example.apimodelopredictivo.entity.resultados;
 @Repository
 
 public interface resultadosRepository extends JpaRepository<resultados, Integer> {
-
+    void deleteByIdprediccion(int idprediccion);
 }

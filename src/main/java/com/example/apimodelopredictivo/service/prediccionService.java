@@ -23,4 +23,8 @@ public class prediccionService {
         return prediccionRepository.findAll();
     }
 
+    public void delete(int idprediccion) {
+        prediccionRepository.deleteById(idprediccion);
+    }
+
 }

@@ -44,7 +44,7 @@ public class userController {
     }
 
     @DeleteMapping("/{iduser}")
-    public void saveUpdate(@PathVariable("iduser") int iduser) {
+    public void saveUpdate(@PathVariable int iduser) {
         profesorservice.delete(iduser);
     }
 }

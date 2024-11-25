@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import com.example.apimodelopredictivo.entity.resultados;
 import com.example.apimodelopredictivo.repository.resultadosRepository;
 
+import jakarta.transaction.Transactional;
 
 @Service
 public class resultadosService {
@@ -27,5 +28,14 @@ public class resultadosService {
         } catch (Exception e) {
             return "Error";
         }
+    }
+
+    public List<resultados> guardarPredicciones(List<resultados> predicciones) {
+        return resultadosRepository.saveAll(predicciones);
+    }
+
+    @Transactional
+    public void eliminarPrediccionesPorIdprediccion(int idprediccion) {
+        resultadosRepository.deleteByIdprediccion(idprediccion);
     }
 }
