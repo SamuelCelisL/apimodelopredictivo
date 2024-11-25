@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import com.example.apimodelopredictivo.entity.resultados;
 import com.example.apimodelopredictivo.repository.resultadosRepository;
 
+
 @Service
 public class resultadosService {
 
@@ -17,5 +18,14 @@ public class resultadosService {
 
     public List<resultados> getresultadosById(int idprediccion) {
         return resultadosRepository.findAllById(Collections.singletonList(idprediccion));
+    }
+
+    public String guardar(List<resultados> respuesta) {
+        try {
+            resultadosRepository.saveAll(respuesta);
+            return "Guardado";
+        } catch (Exception e) {
+            return "Error";
+        }
     }
 }
