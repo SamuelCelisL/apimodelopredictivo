@@ -34,9 +34,9 @@ public class prediccionController {
         return prediccionService.getPredicciones();
     }
 
-    @GetMapping("/{idprediccion}")
-    public List<prediccion> getPrediccionesById(@PathVariable int idprediccion) {
-        return prediccionService.getPrediccionesByUserId(idprediccion);
+    @GetMapping("/{iduser}")
+    public List<prediccion> getPrediccionesById(@PathVariable int iduser) {
+        return prediccionService.getPrediccionesByUserId(iduser);
     }
 
     @PostMapping

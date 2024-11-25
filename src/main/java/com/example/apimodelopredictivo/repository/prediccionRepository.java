@@ -9,5 +9,5 @@ import com.example.apimodelopredictivo.entity.prediccion;
 @Repository
 
 public interface prediccionRepository extends JpaRepository<prediccion, Integer> {
-    List<prediccion> findByIdprediccion(Integer idprediccion);
+    List<prediccion> findByIduser(Integer iduser);
 }

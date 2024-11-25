@@ -11,8 +11,8 @@ public class prediccionService {
     @Autowired
     private prediccionRepository prediccionRepository;
 
-    public List<prediccion> getPrediccionesByUserId(int idprediccion) {
-        return prediccionRepository.findByIdprediccion(idprediccion);
+    public List<prediccion> getPrediccionesByUserId(int iduser) {
+        return prediccionRepository.findByIduser(iduser);
     }
 
     public prediccion createPrediccion(prediccion prediccion) {
