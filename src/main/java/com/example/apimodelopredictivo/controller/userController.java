@@ -38,7 +38,7 @@ public class userController {
         return profesorservice.getUsuario(iduser);
     }
 
-    @PostMapping
+    @PostMapping("/nuevo")
     public void saveUpdate(@RequestBody profesor usuario) {
         profesorservice.saveOpUpdate(usuario);
     }
