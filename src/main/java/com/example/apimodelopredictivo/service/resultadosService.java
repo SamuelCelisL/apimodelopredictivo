@@ -1,6 +1,5 @@
 package com.example.apimodelopredictivo.service;
 
-import java.util.Collections;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,8 +16,8 @@ public class resultadosService {
     @Autowired
     private resultadosRepository resultadosRepository;
 
-    public List<resultados> getresultadosById(int idprediccion) {
-        return resultadosRepository.findAllById(Collections.singletonList(idprediccion));
+    public List<resultados> getresultadosByIdprediccion(int idprediccion) {
+        return resultadosRepository.findAllByIdprediccion(idprediccion);
     }
 
     public String guardar(List<resultados> respuesta) {

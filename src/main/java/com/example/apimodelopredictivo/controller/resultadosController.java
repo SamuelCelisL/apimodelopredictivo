@@ -28,7 +28,7 @@ public class resultadosController {
 
     @GetMapping("/{idprediccion}")
     public List<resultados> getresultadosById(@PathVariable int idprediccion) {
-        return resultadosService.getresultadosById(idprediccion);
+        return resultadosService.getresultadosByIdprediccion(idprediccion);
     }
 
     @PostMapping
