@@ -13,6 +13,7 @@ import com.example.apimodelopredictivo.repository.userRepository;
 public class profesorService {
     @Autowired
     userRepository userRepository;
+    profesor profesor;
 
     public List<profesor> getUsuarios() {
         return userRepository.findAll();
@@ -28,6 +29,10 @@ public class profesorService {
 
     public void delete(int iduser) {
         userRepository.deleteById(iduser);
+    }
+
+    public profesor validateUser(String user, String password) {
+        return userRepository.findByUserAndPassword(user, password);
     }
 
 }

@@ -29,4 +29,45 @@ public class profesor {
     @Column(name = "email", nullable = false)
     private String email;
 
+    // Getters y Setters
+    public int getiduser() {
+        return iduser;
+    }
+
+    public void setiduser(int iduser) {
+        this.iduser = iduser;
+    }
+
+    public String getuser() {
+        return user;
+    }
+
+    public void setuser(String user) {
+        this.user = user;
+    }
+
+    public String getpassword() {
+        return password;
+    }
+
+    public void setpassword(String password) {
+        this.password = password;
+    }
+
+    public String getnombrecompleto() {
+        return nombrecompleto;
+    }
+
+    public void setnombrecompleto(String nombrecompleto) {
+        this.nombrecompleto = nombrecompleto;
+    }
+
+    public String getemail() {
+        return email;
+    }
+
+    public void setemail(String email) {
+        this.email = email;
+    }
+
 }

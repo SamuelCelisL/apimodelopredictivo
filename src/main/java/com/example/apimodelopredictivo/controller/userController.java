@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.apimodelopredictivo.entity.profesor;
@@ -52,4 +53,15 @@ public class userController {
             return "" + e;
         }
     }
+
+    @PostMapping("/login")
+    public Object login(@RequestBody profesor user) {
+        profesor validUser = profesorservice.validateUser(user.getuser(), user.getpassword());
+        if (validUser != null) {
+            return validUser; // Retorna la información del usuario
+        } else {
+            return false; // Retorna false si las credenciales son incorrectas
+        }
+    }
+
 }
