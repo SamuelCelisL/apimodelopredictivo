@@ -14,7 +14,7 @@ public class corsconfiguration {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**") // Aplica a todos los endpoints
-                        .allowedOrigins("http://localhost:3000") // Cambia según tu dominio
+                        .allowedOrigins("https://juanpamarquez.github.io/mpa-proyect/") // Cambia según tu dominio
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS") // Métodos permitidos
                         .allowedHeaders("*") // Permitir todos los headers
                         .allowCredentials(true); // Permite enviar cookies o autenticación
