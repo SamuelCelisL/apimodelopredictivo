@@ -44,7 +44,13 @@ public class userController {
     }
 
     @DeleteMapping("/{iduser}")
-    public void saveUpdate(@PathVariable int iduser) {
-        profesorservice.delete(iduser);
+    public String saveUpdate(@PathVariable int iduser) {
+        try {
+            profesorservice.delete(iduser);
+            return "Eliminacion de usuario correcta";
+        } catch (Exception e) {
+            // TODO: handle exception
+            return "" + e;
+        }
     }
 }

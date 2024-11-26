@@ -45,9 +45,16 @@ public class prediccionController {
     }
 
     @DeleteMapping("/{idprediccion}")
-    public void deleteprediccion(@PathVariable int idprediccion) {
-        resultadosService.eliminarPrediccionesPorIdprediccion(idprediccion);
-        prediccionService.delete(idprediccion);
+    public String deleteprediccion(@PathVariable int idprediccion) {
+        try {
+            resultadosService.eliminarPrediccionesPorIdprediccion(idprediccion);
+            prediccionService.delete(idprediccion);
+            return "ELIMINACION de prediccion COMPLETADA";
+        } catch (Exception e) {
+            // TODO: handle exception
+            return "" + e;
+        }
+
     }
 
 }
