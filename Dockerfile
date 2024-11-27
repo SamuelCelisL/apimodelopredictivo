@@ -1,8 +1,11 @@
 # Usar una imagen base compatible con Java 21
-FROM openjdk:21-jdk-slim
+FROM ubuntu:lastest AS build
+RUN apt-get update
+RUN apt-get install openjdk-21-jdk -y
+COPY . .
+RUN mvn clean package
 
-# Establecer el directorio de trabajo dentro del contenedor
-WORKDIR /app
+FROM openjdk:21-jdk-slim
 
 # Copiar el archivo JAR generado al contenedor
 COPY target/apimodelopredictivo-0.0.1-SNAPSHOT.jar app.jar
