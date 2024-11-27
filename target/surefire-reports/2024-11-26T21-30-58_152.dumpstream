@@ -1,4 +1,4 @@
-# Created at 2024-11-26T19:38:50.301
+# Created at 2024-11-26T21:30:58.404
 Boot Manifest-JAR contains absolute paths in classpath 'D:\U_samuel\octavo_semestre\Ciencia_de_Datos\Proyecto\SpringBoot\APImodeloP\apimodelopredictivo\target\test-classes'
 Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
 'other' has different root
