@@ -1,0 +1,15 @@
+com\example\apimodelopredictivo\entity\profesor.class
+com\example\apimodelopredictivo\controller\prediccionController.class
+com\example\apimodelopredictivo\repository\userRepository.class
+com\example\apimodelopredictivo\service\prediccionService.class
+com\example\apimodelopredictivo\service\profesorService.class
+com\example\apimodelopredictivo\service\resultadosService.class
+com\example\apimodelopredictivo\repository\prediccionRepository.class
+com\example\apimodelopredictivo\ApimodelopredictivoApplication.class
+com\example\apimodelopredictivo\entity\prediccion.class
+com\example\apimodelopredictivo\configuration\corsconfiguration$1.class
+com\example\apimodelopredictivo\repository\resultadosRepository.class
+com\example\apimodelopredictivo\configuration\corsconfiguration.class
+com\example\apimodelopredictivo\controller\userController.class
+com\example\apimodelopredictivo\controller\resultadosController.class
+com\example\apimodelopredictivo\entity\resultados.class

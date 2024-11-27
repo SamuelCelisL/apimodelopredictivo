@@ -1,0 +1,14 @@
+D:\U_samuel\octavo_semestre\Ciencia_de_Datos\Proyecto\SpringBoot\APImodeloP\apimodelopredictivo\src\main\java\com\example\apimodelopredictivo\ApimodelopredictivoApplication.java
+D:\U_samuel\octavo_semestre\Ciencia_de_Datos\Proyecto\SpringBoot\APImodeloP\apimodelopredictivo\src\main\java\com\example\apimodelopredictivo\configuration\corsconfiguration.java
+D:\U_samuel\octavo_semestre\Ciencia_de_Datos\Proyecto\SpringBoot\APImodeloP\apimodelopredictivo\src\main\java\com\example\apimodelopredictivo\controller\prediccionController.java
+D:\U_samuel\octavo_semestre\Ciencia_de_Datos\Proyecto\SpringBoot\APImodeloP\apimodelopredictivo\src\main\java\com\example\apimodelopredictivo\controller\resultadosController.java
+D:\U_samuel\octavo_semestre\Ciencia_de_Datos\Proyecto\SpringBoot\APImodeloP\apimodelopredictivo\src\main\java\com\example\apimodelopredictivo\controller\userController.java
+D:\U_samuel\octavo_semestre\Ciencia_de_Datos\Proyecto\SpringBoot\APImodeloP\apimodelopredictivo\src\main\java\com\example\apimodelopredictivo\entity\prediccion.java
+D:\U_samuel\octavo_semestre\Ciencia_de_Datos\Proyecto\SpringBoot\APImodeloP\apimodelopredictivo\src\main\java\com\example\apimodelopredictivo\entity\profesor.java
+D:\U_samuel\octavo_semestre\Ciencia_de_Datos\Proyecto\SpringBoot\APImodeloP\apimodelopredictivo\src\main\java\com\example\apimodelopredictivo\entity\resultados.java
+D:\U_samuel\octavo_semestre\Ciencia_de_Datos\Proyecto\SpringBoot\APImodeloP\apimodelopredictivo\src\main\java\com\example\apimodelopredictivo\repository\prediccionRepository.java
+D:\U_samuel\octavo_semestre\Ciencia_de_Datos\Proyecto\SpringBoot\APImodeloP\apimodelopredictivo\src\main\java\com\example\apimodelopredictivo\repository\resultadosRepository.java
+D:\U_samuel\octavo_semestre\Ciencia_de_Datos\Proyecto\SpringBoot\APImodeloP\apimodelopredictivo\src\main\java\com\example\apimodelopredictivo\repository\userRepository.java
+D:\U_samuel\octavo_semestre\Ciencia_de_Datos\Proyecto\SpringBoot\APImodeloP\apimodelopredictivo\src\main\java\com\example\apimodelopredictivo\service\prediccionService.java
+D:\U_samuel\octavo_semestre\Ciencia_de_Datos\Proyecto\SpringBoot\APImodeloP\apimodelopredictivo\src\main\java\com\example\apimodelopredictivo\service\profesorService.java
+D:\U_samuel\octavo_semestre\Ciencia_de_Datos\Proyecto\SpringBoot\APImodeloP\apimodelopredictivo\src\main\java\com\example\apimodelopredictivo\service\resultadosService.java
