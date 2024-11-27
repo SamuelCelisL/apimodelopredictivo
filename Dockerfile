@@ -1,17 +1,32 @@
-# Usar una imagen base compatible con Java 21
-FROM ubuntu:lastest AS build
-RUN apt-get update
-RUN apt-get install openjdk-21-jdk -y
+# Usar una imagen base de Ubuntu para construir desde cero
+FROM ubuntu:latest AS build
+
+# Actualizar e instalar dependencias necesarias
+RUN apt-get update && apt-get install -y \
+    openjdk-21-jdk \
+    maven \
+    && apt-get clean
+
+# Configurar directorio de trabajo
+WORKDIR /app
+
+# Copiar archivos del repositorio al contenedor
 COPY . .
-RUN mvn clean package
 
-FROM openjdk:21-jdk-slim
+# Construir el proyecto usando Maven
+RUN mvn clean package -DskipTests
 
-# Copiar el archivo JAR generado al contenedor
-COPY target/apimodelopredictivo-0.0.1-SNAPSHOT.jar app.jar
+# Segunda etapa: usar una imagen más ligera para la ejecución
+FROM eclipse-temurin:21-jre-slim
 
-# Exponer el puerto en el que la aplicación escuchará (ajustar según sea necesario)
+# Configurar directorio de trabajo
+WORKDIR /app
+
+# Copiar el JAR generado en la etapa de construcción
+COPY --from=build /app/target/apimodelopredictivo-0.0.1-SNAPSHOT.jar app.jar
+
+# Exponer el puerto de la aplicación
 EXPOSE 8081
 
-# Configurar el comando de inicio de la aplicación
-ENTRYPOINT ["java", "-jar", "app.jar"]
+# Comando para ejecutar la aplicación
+ENTRYPOINT ["java", "-jar", "app.jar"]
