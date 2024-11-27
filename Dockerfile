@@ -1,4 +1,4 @@
-# Usar una imagen base de Ubuntu para construir desde cero
+# Etapa 1: Build
 FROM ubuntu:latest AS build
 
 # Actualizar e instalar dependencias necesarias
@@ -16,8 +16,8 @@ COPY . .
 # Construir el proyecto usando Maven
 RUN mvn clean package -DskipTests
 
-# Segunda etapa: usar una imagen más ligera para la ejecución
-FROM eclipse-temurin:21-jre-slim
+# Etapa 2: Run
+FROM eclipse-temurin:21-jre
 
 # Configurar directorio de trabajo
 WORKDIR /app
