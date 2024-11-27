@@ -1,5 +1,5 @@
 # Usar una imagen base compatible con Java 21
-FROM eclipse-temurin:21-jre
+FROM amazoncorretto:21-alphine-jdk
 
 # Establecer el directorio de trabajo dentro del contenedor
 WORKDIR /app
