@@ -1,5 +1,5 @@
 # Usar una imagen base compatible con Java 21
-FROM amazoncorretto:21-alphine-jdk
+FROM openjdk:21-jdk-slim
 
 # Establecer el directorio de trabajo dentro del contenedor
 WORKDIR /app
